@@ -1,12 +1,3 @@
-function myFunction() {
-  var x = document.getElementById("myTop");
-  if (x.className === "navigation") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation";
-  }
-}
-
 var slideIndex = 0;
 showSlides();
 
