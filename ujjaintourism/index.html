@@ -4,320 +4,371 @@
 		<title>Ujjain Tourism</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   	
+  		<!--The given link is for Bootstrap(Version-4.5.2)-->
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		
   		<!--The given link is for Social Media Icons-->
   		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
-
-		
+  		<!--The given link is for CSS(External)-->
   		<link rel="stylesheet" type="text/css" href="mycss.css">
 	</head>
 	<body>
-		<!--Given below is the code for NavBar-->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-			<a href="#" class="navbar-brand"><img src="images/ourlogo.png" alt="Ujjain Tourism" width="235px"></a>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#herewecollapse">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="herewecollapse">
-				<ul class="nav navbar-nav">
-					<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-					<li class="nav-item"><a href="#Packages" class="nav-link">Packages</a></li>
-        			<li class="nav-item"><a href="#" class="nav-link">Sharings</a></li>
-        			<li class="nav-item"><a href="#AboutUS" class="nav-link">About-Us</a></li>
-        			<li class="nav-item"><a href="#ContactUs" class="nav-link">Contact-Us</a></li>
-      		</ul>
-      		<ul class="navbar-nav ml-auto">
-        			<li class="nav-item"><a href="#mySignUp" data-toggle="modal" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
-        			<li class="nav-item"><a href="#mySignIn" data-toggle="modal" class="nav-link"><i class="fas fa-user-tie"></i> Login</a></li>
-      		</ul>
-			</div>
-		</nav>
-
-		<!--Now Coursel Code is start-->
-		<section style="background-color: #eaf5f7">
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-  				<div class="numbertext">1 / 10</div>
-  				<img src="images/m1.png" style="max-width:100%; height: auto;">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-			</div>
-			<div class="mySlides fade">
-  				<div class="numbertext">2 / 10</div>
-				<img src="images/m2.png" style="max-width:100%; height: auto">
-				<div class="text">Pic Courtsey : Epic Media</div>
-			</div>
-			<div class="mySlides fade">
-  				<div class="numbertext">3 / 10</div>
-  				<img src="images/m3.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">4 / 10</div>
-  				<img src="images/m4.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">5 / 10</div>
-  				<img src="images/m5.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">6 / 10</div>
-  				<img src="images/m6.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">7 / 10</div>
-  				<img src="images/m7.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">8 / 10</div>
-  				<img src="images/m8.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">9 / 10</div>
-  				<img src="images/m9.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
-  			<div class="mySlides fade">
-  				<div class="numbertext">10 / 10</div>
-  				<img src="images/m10.png" style="max-width:100%; height: auto">
-  				<div class="text">Pic Courtsey : Epic Media</div>
-  			</div>
+		<!--Given below is the code for NavBar(I created this navbar using Bootstrap)-->
+		<div class="bg-img">
+			<nav id="navbar_top" class="navbar navbar-expand-lg navbar-light fixed-top">
+				<a href="#" class="navbar-brand"><img src="images/uj3.png" alt="Ujjain Tourism" width="300px"></a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#herewecollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="herewecollapse">
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+						<li class="nav-item"><a href="#Packages" class="nav-link">Packages</a></li>
+	        			<li class="nav-item"><a href="#Sharings" class="nav-link">Sharings</a></li>
+	        			<li class="nav-item"><a href="#AboutUS" class="nav-link">About-Us</a></li>
+	        			<li class="nav-item"><a href="#ContactUs" class="nav-link">Contact-Us</a></li>
+	      			</ul>
+	      			<ul class="navbar-nav ml-auto">
+	        			<li class="nav-item"><a href="#mySignUp" data-toggle="modal" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
+	        			<li class="nav-item"><a href="#mySignIn" data-toggle="modal" class="nav-link"><i class="fas fa-user-tie"></i> Login</a></li>
+	      			</ul>
+				</div>
+			</nav>
 		</div>
-		<br>
-		<!--Code for the dots which are placed below the images-->
-			<div style="text-align:center">
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  				<span class="dot"></span>
-  			</div>
-  		</section>
-
-  		<!--Here is the code for Sign-In Form-->
+		
+  		<!--Here is the code for Sign-In Form(It open in a modal window which was created usin Bootstrap)-->
 		<div class="modal" id="mySignIn">
 			<div class="modal-dialog">
-	   		<div class="modal-content">
-					<div class="modal-header">
-	          		<button type="button" class="close" data-dismiss="modal"> &times; </button>
-	        		</div>
-	      		<div class="modal-body">
-	          		<form action="#" class="sign-in-form" id="formhai">
-	            		<h2 class="title">Sign in</h2>
-	            			<div class="input-field">
-	              				<i class="fas fa-user"></i>
-	              				<input type="text" placeholder="Username" name="uname" id="uname" required />
-	            			</div>
-	           				<div class="input-field">
-	              				<i class="fas fa-lock"></i>
-	              				<input type="password" placeholder="Password" name="psw" id="psw" required />
-	            			</div>
-	            			<input type="submit" value="Login" class="btns solid" />
-	            			<p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
-	            			<p class="social-text">Or Sign in with social platforms</p>
-	            			<div class="social-media">
-	              				<a href="#" class="social-icon">
-	                				<i class="fab fa-facebook-f"></i>
-	              				</a>
-	              				<a href="#" class="social-icon">
-	               				<i class="fab fa-twitter"></i>
-	              				</a>
-	              				<a href="#" class="social-icon">
-	               				<i class="fab fa-google"></i>
-	              				</a>
-	             				 <a href="#" class="social-icon">
-	                				<i class="fab fa-linkedin-in"></i>
-	             				</a>
-	            			</div>
-	          		</form>
-	        		</div>
-	        </div>
-	      </div>
+		   		<div class="modal-content">
+						<div class="modal-header">
+		          			<button type="button" class="close" data-dismiss="modal"> &times; </button>
+		        		</div>
+		      			<div class="modal-body">
+		          			<form action="#" class="sign-in-form" id="formhai">
+		            			<h2 class="title">Sign in</h2>
+		            				<div class="input-field">
+		              					<i class="fas fa-user"></i>
+		              					<input type="text" placeholder="Username" name="uname" id="uname" required />
+		            				</div>
+		           					<div class="input-field">
+		              					<i class="fas fa-lock"></i>
+		              					<input type="password" placeholder="Password" name="psw" id="psw" required />
+		            				</div>
+		            				<input type="submit" value="Login" class="btns solid" />
+		            				<p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
+		            				<p class="social-text">Or Sign in with social platforms</p>
+		            				<div class="social-media">
+			              				<a href="#" class="social-icon">
+			                				<i class="fab fa-facebook-f"></i>
+			              				</a>
+			              				<a href="#" class="social-icon">
+			               					<i class="fab fa-twitter"></i>
+			              				</a>
+			              				<a href="#" class="social-icon">
+			               					<i class="fab fa-google"></i>
+			              				</a>
+			             				 <a href="#" class="social-icon">
+			                				<i class="fab fa-linkedin-in"></i>
+			             				</a>
+		            				</div>
+		          			</form>
+		        		</div>
+		        </div>
+	      	</div>
 		</div>
 
-		<!--Here is the code for Sign-Up Form-->
+		<!--Here is the code for Sign-Up Form(It open in a modal window which was created usin Bootstrap)-->
 		<div class="modal" id="mySignUp">
 			<div class="modal-dialog">
-	   		<div class="modal-content">
-					<div class="modal-header">
-	          		<button type="button" class="close" data-dismiss="modal"> &times; </button>
-	        		</div>
-	      		<div class="modal-body">
-	          		<form action="#" class="sign-up-form" id="formhai">
-	            		<h2 class="title">Sign Up</h2>
-	            			<div class="input-field">
-	              				<i class="fas fa-user"></i>
-	              				<input type="text" placeholder="Username" name="uname" id="uname" required />
-	            			</div>
-	            			<div class="input-field">
-	            				<i class="fas fa-phone"></i>
-	            				<input type="text" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}"0 >
-	           				</div>
-	           				<div class="input-field">
-	            				<i class="fas fa-mail-bulk"></i>
-	            				<input type="email" id="email" name="email" placeholder="E-mail" required>
-	           				</div>
-	           				<div class="input-field">
-	            				<i class="fas fa-birthday-cake"></i>
-	            				<input type='date' id='dateOfBirth' name='dob' value='2000-01-01'>
-	           				</div>
-	           				<div class="input-field">
-	              				<i class="fas fa-lock"></i>
-	              				<input type="password" placeholder="Password" name="psw" id="psw" required />
-	            			</div>
-	            			<div>
-	           				<label class="radio-inline">
-      							<input type="radio" name="optradio" checked>Male
-    							</label>
-    							&emsp;&emsp;&emsp;
-    							<label class="radio-inline">
-      							<input type="radio" name="optradio">Female
-    							</label>
-    							</div>
-	            			<input type="submit" value="Sign Up" class="btns solid" />
-	            			<p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
-	            			<p class="social-text">Or Sign-up with social platforms</p>
-	            			<div class="social-media">
-	              				<a href="#" class="social-icon">
-	                				<i class="fab fa-facebook-f"></i>
-	              				</a>
-	              				<a href="#" class="social-icon">
-	               				<i class="fab fa-twitter"></i>
-	              				</a>
-	              				<a href="#" class="social-icon">
-	               				<i class="fab fa-google"></i>
-	              				</a>
-	             				 <a href="#" class="social-icon">
-	                				<i class="fab fa-linkedin-in"></i>
-	             				</a>
-	            			</div>
-	          		</form>
-	        		</div>
-	        </div>
-	      </div>
+		   		<div class="modal-content">
+						<div class="modal-header">
+		          			<button type="button" class="close" data-dismiss="modal"> &times; </button>
+		        		</div>
+			      		<div class="modal-body">
+			          		<form action="#" class="sign-up-form" id="formhai">
+			            		<h2 class="title">Sign Up</h2>
+			            		<div class="input-field">
+			              			<i class="fas fa-user"></i>
+			              			<input type="text" placeholder="Username" name="uname" id="uname" required />
+			            		</div>
+			            		<div class="input-field">
+			            			<i class="fas fa-phone"></i>
+			            			<input type="text" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}"0 >
+			           			</div>
+			           			<div class="input-field">
+			            			<i class="fas fa-mail-bulk"></i>
+			            			<input type="email" id="email" name="email" placeholder="E-mail" required>
+			           			</div>
+			           			<div class="input-field">
+			            			<i class="fas fa-birthday-cake"></i>
+			            			<input type='date' id='dateOfBirth' name='dob' value='2000-01-01'>
+			           			</div>
+			           			<div class="input-field">
+			              			<i class="fas fa-lock"></i>
+			              			<input type="password" placeholder="Password" name="psw" id="psw" required />
+			            		</div>
+			            		<div>
+			           				<label class="radio-inline">
+		      							<input type="radio" name="optradio" checked>Male
+		    						</label>
+		    						&emsp;&emsp;&emsp;
+		    						<label class="radio-inline">
+		      							<input type="radio" name="optradio">Female
+		    						</label>
+		    					</div>
+			            		<input type="submit" value="Sign Up" class="btns solid" />
+			            		<p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
+			            		<p class="social-text">Or Sign-up with social platforms</p>
+			            		<div class="social-media">
+			              			<a href="#" class="social-icon">
+			                			<i class="fab fa-facebook-f"></i>
+			              			</a>
+			              			<a href="#" class="social-icon">
+			               				<i class="fab fa-twitter"></i>
+			              			</a>
+			              			<a href="#" class="social-icon">
+			               				<i class="fab fa-google"></i>
+			              			</a>
+			             			<a href="#" class="social-icon">
+			                			<i class="fab fa-linkedin-in"></i>
+			             			</a>
+			            		</div>
+			          		</form>
+			        	</div>
+			        </div>
+		      </div>
 		</div>
-
+		<br><br>
 		<!--Code for Packages-->
 		<section id="Packages">
-		<div style="background-color: #003862" class="py-5">
-        	<div class="container py-5">
-          	<div class="row mb-4">
-            	<div class="col-lg-5">
-               	<h2 style="color: #eaf5f7" class="display-4 font-weight-light">Packages Details</h2>
+        	<div class="container-fluid">
+  				<div class="col-md-12 text-center">
+                	<h1 style="color: #00adbf">Packages</h1>
+            		<h4 style="color: #00adbf">Choose a package plan that works for you</h4>
             	</div>
-          	</div>
-         <div class="row text-center">
-            <div class="col-xl-4 col-sm-6 mb-5">
-               <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/package.jpeg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-             		<h5 class="mb-0">Platinum</h5><span class="small text-uppercase text-muted">Package Details</span>
-                  <br>
-                  <button type="button" class="btn btn-outline-info btn-lg">Book Now!</button>
-               </div>
-            </div>
-              	<div class="col-xl-4 col-sm-6 mb-5">
-                	<div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/package.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                  	<h5 class="mb-0">Gold</h5><span class="small text-uppercase text-muted">Package Details</span>
-                  	<br>
-                  	<button type="button" class="btn btn-outline-info btn-lg">Book Now!</button>
-                	</div>
-              	</div>
-              	<div class="col-xl-4 col-sm-6 mb-5">
-                  <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/package.jpeg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Silver</h5><span class="small text-uppercase text-muted">Package Details</span>
-                    <br>
-                    <button type="button" class="btn btn-outline-info btn-lg">Book Now!</button>
-              		</div>
-              	</div>
-          	</div>
-        	</div>
-      </div>
-      </section>
+            	<br>
+  				<div class="row">
+    				<div class="col-sm-4">
+      					<div class="panel panel-default text-center">
+        					<div class="panel-heading">
+          						<h1>Basic</h1>
+        					</div>
+        					<div class="panel-body">
+						        <p><strong>20</strong> Lorem</p>
+						        <p><strong>15</strong> Ipsum</p>
+						        <p><strong>5</strong> Dolor</p>
+						        <p><strong>2</strong> Sit</p>
+	          				</div>
+        					<div class="panel-footer">
+          						<h3>$19</h3>
+          						<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+        					</div>
+      					</div>
+    				</div>
+	    			<div class="col-sm-4">
+					    <div class="panel panel-default text-center">
+					    	<div class="panel-heading">
+					          <h1>Pro</h1>
+					        </div>
+					        <div class="panel-body">
+					        	<p><strong>50</strong> Lorem</p>
+					          	<p><strong>25</strong> Ipsum</p>
+					          	<p><strong>10</strong> Dolor</p>
+					          	<p><strong>5</strong> Sit</p>
+					        </div>
+					        <div class="panel-footer">
+					        	<h3>$29</h3>
+					          	<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+					        </div>
+					    </div>
+					</div>
+				   	<div class="col-sm-4">
+				      	<div class="panel panel-default text-center">
+				        	<div class="panel-heading">
+				          		<h1>Premium</h1>
+				        	</div>
+				        	<div class="panel-body">
+						        <p><strong>100</strong> Lorem</p>
+						        <p><strong>50</strong> Ipsum</p>
+						        <p><strong>25</strong> Dolor</p>
+						        <p><strong>10</strong> Sit</p>
+				        	</div>
+			        		<div class="panel-footer">
+			          			<h3>$49</h3> 
+			          			<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+			        		</div>
+			      		</div>
+			    	</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--Code for Sharing Section-->
+		<section id="Sharings">
+			<div class="testimonials">
+		    	<div class="testimonial-inner">
+		      		<h1 style="color: #00adbf">What our client say about us?</h1>
+		      		<div id="rowsd" class="row">
+			        	<div id="colsd" class="col">
+			          		<div class="testimonial">
+			            		<img src="images/jethalal.jpeg" alt="">
+			            		<div id="names" class="name">Jethalal</div>
+				            	<div class="stars">
+							        <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+			            		</div>
+			            		<p>Kya Mastt Kamm kra hai Piyush BHai aapne, sachhi me maja hi aa gya aaj toh, Ek Jalebi Fafda toh banta hai yrrrr.</p>
+			          		</div>
+			        	</div>
+			        
+				        <div id="colsd" class="col">
+				          	<div class="testimonial">
+				            	<img src="images/babitaji.jpeg" alt="">
+					            <div id="names" class="name">Babita Ji</div>
+					            <div class="stars">
+					              <i class="fas fa-star"></i>
+					              <i class="fas fa-star"></i>
+					              <i class="fas fa-star"></i>
+					              <i class="fas fa-star"></i>
+					              <i class="far fa-star"></i>
+					        	</div>
+			            		<p>Jetha ji ne bataya aap ne website bnai hai Piyush, unhi ke recommendation pe mene visit kiya, Nice Work, I am impressed.</p>
+				          	</div>
+				        </div>
+			        
+				        <div id="colsd" class="col">
+				          	<div class="testimonial">
+				            	<img src="images/daya.jpeg" alt="">
+					            <div id="names" class="name">Daya BHen</div>
+					            <div class="stars">
+				    	        	<i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						            <i class="fas fa-star"></i>
+						        </div>
+					            <p>Tappu ke papa bole isliye dekhe hai hum. Tappu ke mobile se visit kiye hai, pata nhi kya banaye ho pr lag accha rha hai.</p>
+					        </div>
+			        	</div>
+			    	</div>
+				</div>
+			</div>
+		</section>
+
 
 		<!--Code for About US-->
 		<section id="AboutUS">
-		<div style="background-color: #eaf5f7">
-  			<div class="container py-1">
-    			<div class="row h-100 align-items-center py-5">
-      			<div class="col-lg-6">
-        				<h1 style="color: #003862" class="display-4">About Ujjain Tourism</h1>
-        				<p  class="lead mb-0">We are here to help you in exploring the ancient city UJJAIN. Together we enjoy it. Have a Happy and Safe Journey.</p>
-        				</p>
-      			</div>
-      			<div class="col-lg-6 d-none d-lg-block"><img src="images/icon.png" alt="" class="img-fluid"></div>
-    			</div>
-  			</div>
-		</div>
-		<div style="background-color: #003862" class="py-5">
-  			<div class="container py-5">
-    			<div class="row mb-4">
-      			<div class="col-lg-5">
-        				<h2 style="color: #eaf5f7" class="display-4 font-weight-light">Our team</h2>
-      			</div>
-    			</div>
-		<div class="row text-center">
-      <!-- Team item-->
-      <div class="col-xl-4 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/piyush.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Piyush Ahir</h5><span class="small text-uppercase text-muted">About Piyush</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="https://www.facebook.com/piyushahir280" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/piyushahir28" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/piyushonweb/" target="_blank" class="social-link"><i class="fab fa-instagram" ></i></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/piyushahir28" target="_blank"class="social-link"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
+			<div >
+	  			<div class="container py-1">
+	    			<div class="row h-100 align-items-center py-5">
+	      				<div class="col-lg-6">
+	        				<h1 style="color: #004469" class="display-4">About Ujjain Tourism</h1>
+	        				<p  class="lead mb-0">We are here to help you in exploring the ancient city UJJAIN. Together we enjoy it. Have a Happy and Safe Journey.</p>
+	        				</p>
+	      				</div>
+	      				<div class="col-lg-6 d-none d-lg-block"><img src="images/icon.png" alt="" class="img-fluid"></div>
+	    			</div>
+	  			</div>
+			</div>
+			<!--Code for Why to select us-->
+			<div style="background-color: transparent" class="jumbotron text-center">
+  				<h1 style="color: #00adbf">Why use a Travel Website</h1>
+  				<p >Planning a trip today can be confusing and time consuming. A travel website not only arranges the various modes of transportation,<br> but may also be able to save you money with early booking discounts, special fares, hotel deals and travel advisories. </p>
+			</div>
+			<div class="container">
+  				<div class="row">
+					<div class="col-sm-3">
+						<img class="img-responsive center-block d-block mx-auto" src="images/Convenience.svg" alt="Travel Advisor Convenience" width="100px" />
+    					<br>
+						<p style="text-align: center;"><b>Convenience</b></p>
+						<p>Instead of sifting through countless websites, guidebooks or post from your friends on social media, you deserve a hassle-free vacation planned by a professional, saving your valuable time.
+					</div>
 
-      <!-- Team item-->
-      <div class="col-xl-4 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/girl.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Shivangi Dargar</h5><span class="small text-uppercase text-muted">Aboout Shivangi</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
+					<div class="col-sm-3">
+						<img class="img-responsive center-block d-block mx-auto" src="images/SaveMoney.svg" alt="Travel Advisors Can Save You Money" width="100px" /></p>
+						<p style="text-align: center;"><b>Save Money</b></p>
+						<p>Travel advisors have exclusive access to special travel fares and discounts, guaranteeing you&#8217;re getting the best value. You want real benefits and a travel advisor can provide that for you.
+					</div>
 
-      <!-- Team item-->
-      <div class="col-xl-4 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/girl.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Priya Ratnparkhe</h5><span class="small text-uppercase text-muted">About Priya</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
-      </div>
-    	</div>
-    	</div>
-    </section>
+
+					<div class="col-sm-3">
+						<img class="img-responsive center-block d-block mx-auto" src="images/travelAdvisor.svg" alt="Travel Advisor" width="100px" /></p>
+						<p style="text-align: center;"><b>Personal Attention</b></p>
+						<p>Travel advisors take pride in helping make your trip one-of-a-kind. When using online booking sites, you never know who to contact or where to get guidance from. From planning until you return, you have someone by your side just a phone call or email away.
+					</div>
+
+
+					<div class="col-sm-3">
+						<img class="img-responsive center-block d-block mx-auto" src="images/ExpertAdvise.svg" alt="Travel Advisors have Expert Advise" width="100px" /></p>
+						<p style="text-align: center;"><b>Expert Advice</b></p>
+						<p>Travel advisors are educated travelers who know the world, they will guide you where you want to go. So take advantage of their expertise to help create your dream vacation. Go to places you cannot Google!
+					</div>
+            	</div>
+        	</div>
+
+        	<!--Code for Our Team-->
+			<div class="col-md-12 text-center">    
+            	<h1 style="color: #00adbf">Our Team</h1>
+            </div>
+			<div id="team-wrapper">
+	         	<div class="team-item">
+	            	<img class="member-img" src="images/girl.png" alt="">
+	            	<p class="member-message">Third year Computer Science and Engg, MIT. Entrepreneur, Web Dev enthusiast, Buisness development expert.
+	            	</p>
+		            <div>
+		               <i class="fab fa-instagram"></i>
+		               <i class="fab fa-linkedin"></i>
+		               <i class="fab fa-twitter"></i>
+		               <i class="fab fa-facebook"></i>
+		            </div>
+		            <h3 class="member-name">Shivangi Dargar</h3>
+		            <p class="designation">Position</p>    
+	         	</div>
+		        
+		        <div class="team-item">
+		        	<img class="member-img" src="images/piyush.jpg" alt="">
+		            <p class="member-message">Third year Computer Science and Engg, MIT. Entrepreneur, Web Dev enthusiast, Buisness development expert.
+		            </p>
+		            <div>
+		               <a href="https://www.instagram.com/piyushonweb/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+		               <a href="https://www.linkedin.com/in/piyushahir28" target="_blank"class="social-link"><i class="fab fa-linkedin"></i></a>
+		               <a href="https://twitter.com/piyushahir28" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+		               <a href="https://www.facebook.com/piyushahir280" target="_blank"><i class="fab fa-facebook"></i></a>
+		         	</div>
+		         	<h3 class="member-name">Piyush Ahir</h3>
+		            <p class="designation">Position</p>    
+		        </div>
+		        
+		        <div class="team-item">
+	            	<img class="member-img" src="images/girl.png" alt="">
+	            	<p class="member-message">Third year Computer Science and Engg, MIT. Entrepreneur, Web Dev enthusiast, Buisness development expert.
+	            	</p>
+		            <div>
+		               <i class="fab fa-instagram"></i>
+		               <i class="fab fa-linkedin"></i>
+		               <i class="fab fa-twitter"></i>
+		               <i class="fab fa-facebook"></i>
+		            </div>
+	            	<h3 class="member-name">Priya Ratnaparkhe</h3>
+	            	<p class="designation">Position</p>    
+	         	</div>
+	      	</div>
+      	</section>
 
 		<!--Here the code of Contact US (Bat karo Humse)-->
-		<section style="background-color: #eaf5f7" id="ContactUs">
-    		<h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+		<section  id="ContactUs">
+    		<h2 class="h1-responsive font-weight-bold text-center my-4" style="color: #00adbf" >Contact us</h2>
     		<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         	a matter of hours to help you.</p>
 
@@ -337,46 +388,46 @@
 		         </ul>
 		      </div>
 			   <div class="col-md-6 mb-md-0 mb-5">
-			      <form id="contact-form" name="contact-form" method="POST">
+			      	<form id="contact-form" name="contact-form" onsubmit='return validateForm(this)' method="POST">
 				    	<!--Grid row-->
-			         <div class="row">
+			        	<div class="row">
 		            	<!--Grid column-->
-			         	<div class="col-md-6">
-			               <div class="md-form mb-0">
-			                  <input type="text" name="uname" id="uname" required class="form-control">
-			                  <label for="name" class="">Your name</label>
-			               </div>
-			            </div>
-			            <!--Grid column-->
-			            <div class="col-md-6">
-			               <div class="md-form mb-0">
-			                  <input type="email" id="email" name="email" class="form-control">
-			                  <label for="email" class="">Your email</label>
-			               </div>
-			            </div>
-			         </div>
-			         <div class="row">
-			            <div class="col-md-6">
-			               <div class="md-form mb-0">
-			                  <input type="text" id="number" name="number" required pattern="[0-9]{10}" class="form-control">
-			                  <label for="subject" class="">Your Contact Number</label>
-			               </div>
-			            </div>
-			         </div>
-			         <div class="row">
-			           <div class="col-md-12">
-	 				         <div class="md-form">
-			                  <textarea id='message' name='message' desciption='message' rows="2" class="form-control md-textarea"></textarea>
-			                  <label for="message">Your message</label>
-			               </div>
-			            </div>
-			         </div>
-			      </form>
-					<div class="text-center text-md-left">
-			         <a class="btn btn-primary">Send</a>
-			      </div>
-			      <div class="status"></div>
-			   </div>
+				         	<div class="col-md-6">
+				               <div class="md-form mb-0">
+				                  <input type="text" name="name" id="name" required class="form-control">
+				                  <label for="name" class="">Your name</label>
+				               </div>
+				            </div>
+				            <!--Grid column-->
+				            <div class="col-md-6">
+				               <div class="md-form mb-0">
+				                  <input type="email" id="email" name="email" class="form-control">
+				                  <label for="email" class="">Your email</label>
+				               </div>
+				            </div>
+			        	</div>
+				        <div class="row">
+				            <div class="col-md-6">
+				               <div class="md-form mb-0">
+				                  <input type="text" id="number" name="number" required pattern="[0-9]{10}" class="form-control">
+				                  <label for="subject" class="">Your Contact Number</label>
+				               </div>
+				            </div>
+				        </div>
+				        <div class="row">
+				           <div class="col-md-12">
+		 				         <div class="md-form">
+				                  <textarea id='message' name='message' desciption='message' rows="2" class="form-control md-textarea"></textarea>
+				                  <label for="message">Your message</label>
+				               </div>
+				            </div>
+				        </div>
+						<div class="text-center text-md-left">
+							<input type="submit" value="Send" class="btns solid"/>
+				      	</div>
+				   	</form>
+			      	<div class="status"></div>
+			   	</div>
 			</div>
 		</section>
 
@@ -428,6 +479,8 @@
                         <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
                         <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
                         <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                        <a href="#" title="To Top">
+    					<span class="fa fa-angle-double-up"></span></a>
                     </div>
                 </div>
             </div>  
