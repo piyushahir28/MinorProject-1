@@ -201,6 +201,7 @@
   padding: 40px 0;
   color: #434343;
   text-align: center;
+  transition: all 0.3s;
 }
 
 .testimonial-inner
@@ -232,12 +233,9 @@
   background: #f1f1f1;
   padding: 30px;
   border-radius: 30px;
-    margin: 20px;
-    transition: all 0.3s;
-
 }
 
-.testimonal:hover{
+.testimonals:hover{
     box-shadow: 5px 5px 2px 1px rgba(67, 67, 70, 0.2);
     transform: scale(1.05,1.05);
 }
