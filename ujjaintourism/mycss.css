@@ -5,6 +5,23 @@
   font-family: "montserrat", sans-serif;
 }
 
+
+.navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+
+
 /*CSS for very first background image*/
 .bg-img {
   /* The image used */
@@ -453,4 +470,29 @@
     .team-item>p {
         padding: 10px;
     } 
-} 
+}
+
+
+
+#mypayment {
+        max-width: 960px;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      } 
+
+
+
+.row-change {
+          margin: 15px;
+        }

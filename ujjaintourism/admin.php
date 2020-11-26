@@ -1,3 +1,37 @@
+<?php
+
+	session_start();
+
+	$price="";
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header('location: index.html');
+	}
+	if (isset($_GET['basicpackage'])) {
+	
+		$_SESSION['price'] = 6000;
+		$_SESSION['packageName'] = 'Basic';
+		header('location: payment.php');
+	}
+	if (isset($_GET['propackage'])) {
+	
+		$_SESSION['price'] = 8000;
+		$_SESSION['packageName'] = 'Pro';
+		header('location: payment.php');
+	}
+	if (isset($_GET['premiumpackage'])) {
+	
+		$_SESSION['price'] = 10000;
+		$_SESSION['packageName'] = 'Premium';
+		header('location: payment.php');
+	}
+	if (isset($_GET['gallery'])) {
+	
+		header('location: gallery.php');
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,7 +50,9 @@
   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
 
+
   		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
   		<!--The given link is for CSS(External)-->
   		<link rel="stylesheet" type="text/css" href="mycss.css">
@@ -32,114 +68,28 @@
 				<div class="collapse navbar-collapse" id="herewecollapse">
 					<ul class="nav navbar-nav">
 						<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-						<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+						<li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
 						<li class="nav-item"><a href="#Packages" class="nav-link">Packages</a></li>
 	        			<li class="nav-item"><a href="#Sharings" class="nav-link">Sharings</a></li>
 	        			<li class="nav-item"><a href="#AboutUS" class="nav-link">About-Us</a></li>
 	        			<li class="nav-item"><a href="#ContactUs" class="nav-link">Contact-Us</a></li>
 	      			</ul>
 	      			<ul class="navbar-nav ml-auto">
-	        			<li class="nav-item"><a href="#mySignUp" data-toggle="modal" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
-	        			<li class="nav-item"><a href="#mySignIn" data-toggle="modal" class="nav-link"><i class="fas fa-user-tie"></i> Login</a></li>
+	        			<div class="nav-item dropdown">
+	        				<?php if (isset($_SESSION['username'])) : ?>
+                    		<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-check"></i><strong><?php echo $_SESSION['username']  ?></strong></a>
+		                    <div class="dropdown-menu">
+		                        <a href="#" class="dropdown-item"><i class="fas far fa-id-badge"></i>&nbsp;&nbsp;Profile</a>
+		                        <a href="#" class="dropdown-item"><i class="fas fas fa-cog"></i>&nbsp;&nbsp;Setting</a>
+		                        <a href="admin.php?logout='1'" class="dropdown-item"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a>
+		                    </div>
+		                	<?php endif ?>
+		                </div>
 	      			</ul>
 				</div>
 			</nav>
 		</div>
 		
-  		<!--Here is the code for Sign-In Form(It open in a modal window which was created usin Bootstrap)-->
-		<div class="modal" id="mySignIn">
-			<div class="modal-dialog">
-		   		<div class="modal-content">
-						<div class="modal-header">
-		          			<button type="button" class="close" data-dismiss="modal"> &times; </button>
-		        		</div>
-		      			<div class="modal-body">
-		          			<form action="signin.php" method="post" class="sign-in-form" id="formhai">
-		            			<h2 class="title">Sign in</h2>
-		            				<div class="input-field">
-		              					<i class="fas fa-user"></i>
-		              					<input type="text" placeholder="Username" name="uname" id="uname" required />
-		            				</div>
-		           					<div class="input-field">
-		              					<i class="fas fa-lock"></i>
-		              					<input type="password" placeholder="Password" name="psw" id="psw" required />
-		            				</div>
-		            				<input type="submit" name="login_user" value="Login" class="btns solid" />
-		            				<p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
-		            				<p class="social-text">Or Sign in with social platforms</p>
-		            				<div class="social-media">
-			              				<a href="#" class="social-icon">
-			                				<i class="fab fa-facebook-f"></i>
-			              				</a>
-			              				<a href="#" class="social-icon">
-			               					<i class="fab fa-twitter"></i>
-			              				</a>
-			              				<a href="#" class="social-icon">
-			               					<i class="fab fa-google"></i>
-			              				</a>
-			             				 <a href="#" class="social-icon">
-			                				<i class="fab fa-linkedin-in"></i>
-			             				</a>
-		            				</div>
-		          			</form>
-		        		</div>
-		        </div>
-	      	</div>
-		</div>
-
-		<!--Here is the code for Sign-Up Form(It open in a modal window which was created usin Bootstrap)-->
-		<div class="modal" id="mySignUp">
-			<div class="modal-dialog">
-		   		<div class="modal-content">
-						<div class="modal-header">
-		          			<button type="button" class="close" data-dismiss="modal"> &times; </button>
-		        		</div>
-			      		<div class="modal-body">
-			          		<form action="signup.php" method="post" class="sign-up-form" id="formhai">
-			            		<h2 class="title">Sign Up</h2>
-			            		<div class="input-field">
-			              			<i class="fas fa-user"></i>
-			              			<input type="text" placeholder="Username" name="uname" id="uname" required />
-			            		</div>
-			            		<div class="input-field">
-			            			<i class="fas fa-phone"></i>
-			            			<input type="text" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}"0 >
-			           			</div>
-			           			<div class="input-field">
-			            			<i class="fas fa-mail-bulk"></i>
-			            			<input type="email" id="email" name="email" placeholder="E-mail" required>
-			           			</div>
-			           			<div class="input-field">
-			            			<i class="fas fa-birthday-cake"></i>
-			            			<input type='date' id='dateOfBirth' name='dob' value='2000-01-01'>
-			           			</div>
-			           			<div class="input-field">
-			              			<i class="fas fa-lock"></i>
-			              			<input type="password" placeholder="Password" name="psw" id="psw" required />
-			            		</div>
-			            		
-			            		<input type="submit" name="sign_user" value="Sign Up" class="btns solid" />
-			            		<p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
-			            		<p class="social-text">Or Sign-up with social platforms</p>
-			            		<div class="social-media">
-			              			<a href="#" class="social-icon">
-			                			<i class="fab fa-facebook-f"></i>
-			              			</a>
-			              			<a href="#" class="social-icon">
-			               				<i class="fab fa-twitter"></i>
-			              			</a>
-			              			<a href="#" class="social-icon">
-			               				<i class="fab fa-google"></i>
-			              			</a>
-			             			<a href="#" class="social-icon">
-			                			<i class="fab fa-linkedin-in"></i>
-			             			</a>
-			            		</div>
-			          		</form>
-			        	</div>
-			        </div>
-		      </div>
-		</div>
 		<br><br>
 		<!--Code for Packages-->
 		<section id="Packages">
@@ -164,7 +114,9 @@
 	          				</div>
         					<div class="panel-footer">
           						<h3>Rs. 6000</h3>
-          						<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+          						<?php if (isset($_SESSION['username'])) : ?>
+          						<a href="admin.php?basicpackage='1'"><button name="basicpackage" class="btn btn-lg">Book Now!</button></a>
+          						<?php endif ?>
         					</div>
       					</div>
     				</div>
@@ -182,7 +134,9 @@
 					        </div>
 					        <div class="panel-footer">
 					        	<h3>Rs. 8000</h3>
-					          	<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+					          	<?php if (isset($_SESSION['username'])) : ?>
+					          	<a href="admin.php?propackage='1'"><button name="propackage" class="btn btn-lg">Book Now!</button></a>
+					        	<?php endif ?>
 					        </div>
 					    </div>
 					</div>
@@ -192,7 +146,7 @@
 				          		<h1>Premium</h1>
 				        	</div>
 				        	<div class="panel-body">
-						        <br>
+				        		<br>
 						        <p><strong><i class="fas fa-calendar-alt"></i></strong>  4 Nights/5 Days</p>
 						        <p><strong>&#11088;&#11088;&#11088;&#11088;&#11088;</strong> Hotel</p>
 						        <p><strong>Guide</strong>   &#9989;</p>
@@ -200,7 +154,9 @@
 				        	</div>
 			        		<div class="panel-footer">
 			          			<h3>Rs. 10000</h3> 
-			          			<a href="#mySignIn" data-toggle="modal" class="nav-link"><button class="btn btn-lg">Book Now!</button></a>
+			          			<?php if (isset($_SESSION['username'])) : ?>
+			          			<a href="admin.php?premiumpackage='1'"><button name="premiumpackage" class="btn btn-lg">Book Now!</button></a>
+			        			<?php endif ?>
 			        		</div>
 			      		</div>
 			    	</div>
@@ -386,7 +342,7 @@
 		         </ul>
 		      </div>
 			   <div class="col-md-6 mb-md-0 mb-5">
-			      	<form id="contact-form" name="contact-form" onsubmit='return validateForm(this)' method="POST">
+			      	<form action="contactus.php" id="contact-form" name="contact-form" method="post">
 				    	<!--Grid row-->
 			        	<div class="row">
 		            	<!--Grid column-->
@@ -421,7 +377,7 @@
 				            </div>
 				        </div>
 						<div class="text-center text-md-left">
-							<a href="#mySignIn" data-toggle="modal" class="nav-link"><input type="submit" value="Send" class="btns solid"/></a>
+							<input name="contactus" type="submit" value="Send" class="btns solid"/>
 				      	</div>
 				   	</form>
 			      	<div class="status"></div>
