@@ -8,14 +8,6 @@
 <body>
 	
 <?php include('server.php')?>
-	<?php include('errors.php') ?>
-
-	<?php 
-	if(!isset($_SESSION[''])) { 
-	echo "<script type='text/javascript'>"; 
-	echo "alert('User not logged in!')"; 
-	echo "</script>"; 
-	} 
-?> 
+	<?php include('errors.php') ?> 
 </body>
 </html>

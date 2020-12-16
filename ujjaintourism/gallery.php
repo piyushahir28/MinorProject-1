@@ -316,13 +316,13 @@
                         <h3 class="my-4 text-white">About<span class="mx-2">Ujjain Tourism</span></h3>
 
                         <p class="footer-links font-weight-bold">
-                            <a class="text-white" href="#">Home</a>
+                            <a class="text-white" href="admin.php?home='1'">Home</a>
                             |
-                            <a class="text-white" href="#Packages">Packages</a>
+                            <a class="text-white" href="admin.php?package='1'">Packages</a>
                             |
-                            <a class="text-white" href="#AboutUS">About</a>
+                            <a class="text-white" href="admin.php?aboutus='1'">About</a>
                             |
-                            <a class="text-white" href="#ContactUs">Contact</a>
+                            <a class="text-white" href="admin.php?contactus='1'">Contact</a>
                         </p>
                         <p class="text-light py-4 mb-4">&copy;2020 Ujjain Tourism All Rights Reserved.</p>
                     </div>

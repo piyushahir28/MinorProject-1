@@ -134,6 +134,24 @@
               </div>
             </div>
           </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <label for="country" class="form-label">Hotel</label>
+              <select>
+                <option value="1">Choose...</option>
+                <option value="1">Hotel Kalpana Palace</option>
+                <option value="2">Hotel Imperial</option>
+                <option value="3">Hotel Abika Elite</option>
+                <option value="4">Hotel Midland</option>
+                <option value="5">Anjushree Hotel</option>
+                <option value="6">Rudraksh Club and Resorts</option>
+                <option value="7">Hotel Satyug</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+          </li>
           <li class="list-group-item d-flex justify-content-between bg-light">
             <div class="text-success">
               <h6 class="my-0">Promo code</h6>
@@ -146,7 +164,7 @@
             <strong>Rs. <input type="" name="totalPrice" id="totalPrice" readonly=""></strong>
           </li>
         </ul>
-        <?php endif ?>
+        
 
         <form class="card p-2">
           <div class="input-group">
@@ -357,13 +375,13 @@
                         <h3 class="my-4 text-white">About<span class="mx-2">Ujjain Tourism</span></h3>
 
                         <p class="footer-links font-weight-bold">
-                            <a class="text-white" href="#">Home</a>
+                            <a class="text-white" href="admin.php?home='1'">Home</a>
                             |
-                            <a class="text-white" href="#Packages">Packages</a>
+                            <a class="text-white" href="admin.php?package='1'">Packages</a>
                             |
-                            <a class="text-white" href="#AboutUS">About</a>
+                            <a class="text-white" href="admin.php?aboutus='1'">About</a>
                             |
-                            <a class="text-white" href="#ContactUs">Contact</a>
+                            <a class="text-white" href="admin.php?contactus='1'">Contact</a>
                         </p>
                         <p class="text-light py-4 mb-4">&copy;2020 Ujjain Tourism All Rights Reserved.</p>
                     </div>
@@ -403,7 +421,7 @@
         </div>
      </footer>
 
-
+     <?php endif ?>
 
     
 

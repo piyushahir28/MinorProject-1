@@ -9,7 +9,7 @@
   $errors = array();
 
   //connect to database
-  $db = mysqli_connect('localhost','root','','pokemon') or die("Could not connect to databases");
+  $db = mysqli_connect('localhost','id15492053_pokemon','Rakesh@63117','id15492053_mitut') or die("Could not connect to databases");
 
   //User Registration
   if(isset($_POST['sign_user'])){
@@ -34,6 +34,8 @@
     $password = md5($pwd);
     $query = "INSERT INTO user(username,contact,email,dob,password) VALUES('$username','$contact','$email','$dob','$password')";
     mysqli_query($db, $query);
+
+    $_SESSION['username'] = $username;
     $_SESSION['success'] = "You are now logged in";
 
     header('location: admin.php');
