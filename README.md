@@ -1,2 +1,2 @@
-# minor
+#minor
 Minor Project 1
